@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1 id="txtTitle">C10</h1>
+    <input type="number" placeholder="number A" id="txtNumA">
+    <input type="number" placeholder="number B" id="txtNumB">
+    <button onclick="sum()">+</button>
+    <p id="result"></p>
+    <script>
+        // document.write("<h1>Hello</h1>")
+        // document.write("CodeGym")
+        function sum(){
+            a = +document.getElementById("txtNumA").value
+            b = +document.getElementById("txtNumB").value
+            total = a + b
+            console.log(total)
+            title = document.getElementById("txtTitle").innerText
+            document.getElementById("result").innerHTML ="<h1>" +title+"-"+total + "</h1>"
+
+        }
+    </script>
+</body>
+</html>
