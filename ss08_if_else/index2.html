@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    /*
+      Viết chương trình cho phép người dùng nhập vào điểm
+      Nếu điểm >= 75
+        - Nếu % vắng nghỉ >=20 thì in ra màn hình Fail
+        - Nếu % vắng nghỉ < 20 thì in ra màn hình Pass
+      Ngược lại
+       - In ra màn hình Fail
+   */
+    let point = +prompt("input point: ");
+    let absent = prompt("input % absent: ")
+    if(point >= 75){
+        if(absent >= 20){
+            document.write("Fail");
+        } else {
+            document.write("Pass")
+        }
+    } else {
+        document.write("Fail");
+    }
+
+</script>
+</body>
+</html>
