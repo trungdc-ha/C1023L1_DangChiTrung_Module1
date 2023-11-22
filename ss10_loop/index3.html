@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        /*
+        Bôn được mẹ cho xx tiền
+        Hãy mô tả Bôn đi mua quà (ăn vặt)
+        Trả lời ba câu hỏi ?
+            - Nội dung cần lặp là gì ?
+            - Điều kiện lặp là gì?
+            - Xác định số lần lặp ?
+                Không xác định ==> white | do-while
+         */
+
+        let money = prompt("Input money: ");
+        while (money > 0){
+            let product = prompt("Bôn muốn mua gì ?");
+            let price = +prompt("Nhập giá sản phẩm: ");
+            if(price <= money){
+                document.write("Đã mua "+ product + " - " + price + "</br>");
+                money = money - price;
+            }
+        }
+    </script>
+</body>
+</html>
