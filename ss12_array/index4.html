@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // let arr = ["a", "b", "c", "d"];
+    // let arr2d = [ [1,2,3], [4,5,6], [7,8,9] ];
+    // let arr2d = [
+    //     [1,2,3,9], //0
+    //     [4,5,6,9], //1
+    //     [7,8,9,9]  //2
+    // ]
+    // for(let row = 0; row < arr2d.length; row++){
+    //     for(let col = 0; col < arr2d[row].length; col++){
+    //         document.write(arr2d[row][col] + " ");
+    //     }
+    //     document.write("</br>");
+    // }
+    // document.write(arr2d[2][1]); //arr2d[index_row][index_col]
+    // let arr = [
+    //     "a",
+    //     "b",
+    //     "c",
+    //     "d"
+    // ]
+
+    //Tạo mảng hai chiều với hàng và cột nhập từ bàn phím
+    let inputRow = +prompt("nhap so hang: "); //3
+    let inputCol = +prompt("nhap so cot: "); //4
+
+    let arr2d = new Array(inputRow); //[u, u, u]
+    for (let row = 0; row < arr2d.length; row++){
+        arr2d[row] = new Array(inputCol); //[ [u,u,u,u] , u, u]
+        // arr2d[row] = [];
+        /*
+        [
+            [u,u,u,u],
+            u,
+            u
+        ]
+         */
+        for(let col = 0; col < arr2d[row].length; col++){
+            let value = +prompt("input value ["+row+"]["+col+"] : ");
+            arr2d[row][col] = value;
+        }
+    }
+
+
+    for(let row = 0; row < arr2d.length; row++){
+        for(let col = 0; col < arr2d[row].length; col++){
+            document.write(arr2d[row][col] + " ");
+        }
+        document.write("</br>");
+    }
+</script>
+</body>
+</html>
