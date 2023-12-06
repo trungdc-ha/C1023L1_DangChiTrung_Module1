@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // let x = prompt("Input number"); //5
+    // let y = alert("5");
+    // // let y = undefined;
+    // // let y;
+    // console.log(x); //5
+    // console.log(y); //
+    // function sum() { //void
+    //     let a = +prompt("input A");
+    //     let b = +prompt("input B");
+    //     alert(a + b);
+    // }
+    function sum() { //có return
+        let a = +prompt("input A");
+        let b = +prompt("input B");
+        if (a == 5) {
+            return a + b;
+        } else {
+            return (a + b) / 2;
+        }
+        // alert(a + b);
+    }
+
+    let result = sum();
+    document.write(result);
+</script>
+</body>
+</html>
