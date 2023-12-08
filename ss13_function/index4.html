@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function changeValue(funcNum){//funcNum = 5
+        funcNum = 1;
+    }
+    let num = 5;
+    changeValue(num); //copy value
+    console.log(num);
+
+    function changeValue(funcNum){ //funcNum = 00xxa
+        funcNum[0] = 1;
+    }
+    let num = [5];
+    changeValue(num); //copy reference - địa chỉ //00xxa
+    console.log(num);
+</script>
+</body>
+</html>
