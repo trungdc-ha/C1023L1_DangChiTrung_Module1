@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        /*B1: Tạo class bằng từ khóa function*/
+        function DienThoai(ten, hangSX) {
+            //khai báo thuộc tính
+            var ten = ten;
+            var hangSX = hangSX;
+
+            //Khai bao hành vi - function
+            this.goiDien = function () {
+                document.write(ten + " dang goi dien </br>");
+            }
+        }
+
+        /*B2 Tạo đối tượng */
+        let iphone = new DienThoai("iphone 15", "Apple");
+        let nokia = new DienThoai("Nokia E95", "Nokia");
+
+        iphone.goiDien();
+        nokia.goiDien();
+    </script>
+</body>
+</html>
